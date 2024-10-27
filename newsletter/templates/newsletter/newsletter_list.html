@@ -1,0 +1,25 @@
+{% extends 'newsletter/base.html' %}
+
+{% block content %}
+
+    <main role="main" class="container">
+
+        <div class="container">
+
+            <a type="button" class="btn btn-primary btn-lg text-center w-25"
+               href="{% url 'newsletter:newsletter_create' %}">Создать рассылку</a><br><br>
+
+            <div class="card-deck mb-3 text-center">
+                {% for obj in object_list %}
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Рассылка {{ obj.id }}</h4>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </main>
+
+{% endblock %}
