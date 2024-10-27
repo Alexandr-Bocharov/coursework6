@@ -1,0 +1,35 @@
+# Директории виртуальных окружений
+.venv/
+env/
+venv/
+env.bak/
+venv.bak/
+
+# Файлы конфигурации IDE
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Файлы и папки кэширования
+*.log
+*.pot
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Директории для кеширования тестов
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Файлы среды
+.env
+*.env
+
+# Статические и медиа файлы
+/static/
+media/
