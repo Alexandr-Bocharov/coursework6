@@ -26,8 +26,8 @@ class Command(BaseCommand):
         logger.info("Инициализация планировщика задач.")
         scheduler = BlockingScheduler(job_defaults={'misfire_grace_time': 15 * 60})
 
-        run_date = datetime(2024, 10, 27, 10, 5)  # Проверьте время запуска
-        scheduler.add_job(send_email, 'interval', minutes=3, start_date=run_date)
+        run_date = datetime(2024, 10, 27, 16, 44)  # Проверьте время запуска
+        scheduler.add_job(send_email, 'interval', minutes=1, start_date=run_date)
 
         try:
             logger.info("Запуск планировщика.")

@@ -1,0 +1,26 @@
+{% extends 'newsletter/base.html' %}
+
+{% block content %}
+
+<main role="main" class="container">
+
+    <div class="container">
+
+
+        <div class="card-deck mb-3 text-center">
+            {% for obj in object_list %}
+            <div class="card">
+                <div class="card-body">
+                    <p>Дата и время: {{ obj.attempt_time }}</p>
+                    <p>Статус: {{ obj.status }}</p>
+                    <p>Ответ сервера: {{ obj.response }}</p>
+                    <p>{{ obj.newsletter }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

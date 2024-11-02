@@ -1,0 +1,21 @@
+{% extends 'newsletter/base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="card w-100 mb-3 text-center">
+            <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Время начала рассылки: {{ object.first_sending_dt }}</h5><br>
+                <h5 class="card-text">Время окончания рассылки: {{ object.last_sending_dt }}</h5><br>
+                <h5>интервал: {{ object.interval }}</h5><br>
+                <h5>статус: {{ object.status }}</h5><br>
+                <h5>клиенты: {% for object in object.clients.all %} {{ object.email }} / {% endfor %}</h5><br>
+                <h5>сообщение: {{ object.message }}</h5><br>
+                <h5>создатель рассылки: {{ object.user_owner }}</h5>
+
+                 <a type="button" class="btn btn-light" href="{% url 'newsletter:newsletter_list' %}">назад</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from newsletter.models import NewsLetter, Client, Message, Interval
+from newsletter.models import NewsLetter, Client, Message, Interval, DeliveryAttempt
 
 
 @admin.register(NewsLetter)
@@ -18,5 +18,9 @@ class MessageAdmin(admin.ModelAdmin):
 @admin.register(Interval)
 class IntervalAdmin(admin.ModelAdmin):
     list_display = ('name', 'frequency')
+
+@admin.register(DeliveryAttempt)
+class DeliveryAttemptAdmin(admin.ModelAdmin):
+    list_display = ('newsletter', 'attempt_time', 'status', 'response')
 
 
