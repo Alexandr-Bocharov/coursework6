@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from newsletter.models import NULLABLE
+NULLABLE = {'blank': True, 'null': True}
 
 
 class User(AbstractUser):
@@ -23,6 +23,10 @@ class User(AbstractUser):
     class Meta:
         verbose_name = 'пользователь'
         verbose_name_plural = 'пользователи'
+        permissions = [
+            ('can_see_all_users', 'can see all users'),
+            ('can_blocked_users', 'can blocked users'),
+        ]
 
 
 
