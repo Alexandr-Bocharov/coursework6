@@ -11,8 +11,14 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import logging
+import os
 
 from django.conf.global_settings import STATICFILES_DIRS
+
+from dotenv import load_dotenv
+
+
 
 
 
@@ -23,11 +29,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
+load_dotenv()
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-2cf(kspj=-x4m0t9wgt+-t4nhjmopilvsb3nn#4qhbr18p^68w'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -47,6 +55,7 @@ INSTALLED_APPS = [
 
     'django_apscheduler',
     'users',
+    'blog',
 
 ]
 
@@ -85,11 +94,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'coursework6',
-        'PORT': 5433,
-        'USER': 'postgres',
-        'PASSWORD': '2306',
+        'ENGINE': os.getenv('ENGINE'),
+        'NAME': os.getenv('NAME'),
+        'PORT': os.getenv('PORT'),
+        'USER': os.getenv('USR'),
+        'PASSWORD': os.getenv('PASSWORD'),
     }
 }
 
@@ -116,11 +125,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
+
 
 USE_I18N = True
 
 USE_TZ = True
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
@@ -131,13 +143,22 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR / 'media')
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'counter230620013@yandex.com'
-EMAIL_HOST_PASSWORD = 'smrqfzjupnjnnpfi'
-EMAIL_USE_SSL = True
+EMAIL_BACKEND = os.getenv('EMAIL_BACKEND')
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+
+SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 
 # django-crispy-forms
 # https://django-crispy-forms.readthedocs.io/en/latest/install.html
@@ -149,4 +170,48 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 AUTH_USER_MODEL = 'users.User'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = '/users/login/'
+
+# Определите путь к файлу лога
+# LOGGING_DIR = os.path.join(BASE_DIR, 'logs')
+# if not os.path.exists(LOGGING_DIR):
+#     os.makedirs(LOGGING_DIR)
+#
+# # Настройка логирования
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'verbose': {
+#             'format': '{levelname} {asctime} {module} {message}',
+#             'style': '{',
+#         },
+#         'simple': {
+#             'format': '{levelname} {message}',
+#             'style': '{',
+#         },
+#     },
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#             'formatter': 'simple',
+#         },
+#         'file': {
+#             'class': 'logging.FileHandler',
+#             'filename': os.path.join(LOGGING_DIR, 'django.log'),
+#             'formatter': 'verbose',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console', 'file'],
+#             'level': logging.DEBUG,  # Уровень логирования
+#         },
+#         'your_app_name': {  # Замените на имя вашего приложения
+#             'handlers': ['console', 'file'],
+#             'level': logging.DEBUG,
+#             'propagate': False,
+#         },
+#     },
+# }
 
