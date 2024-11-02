@@ -1,0 +1,46 @@
+[
+  {
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+      "title": "мода в Париже",
+      "body": "мымр лрыирл рыиарыи ыи иро",
+      "photo": "blog/Изображение_1.jpeg",
+      "views_count": 25,
+      "published_date": "2024-10-31T09:05:17Z"
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+      "title": "мода в Милане",
+      "body": "ирл иы или аы. аынаыр ыиг",
+      "photo": "blog/Изображение_2.jpeg",
+      "views_count": 2,
+      "published_date": "2024-10-31T09:31:49Z"
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+      "title": "мода в Анапе",
+      "body": "lhgiuhvbs ebhbwy fy beuyfiu b",
+      "photo": "blog/Изображение.jpeg",
+      "views_count": 4,
+      "published_date": "2024-10-31T11:18:58Z"
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+      "title": "собаки",
+      "body": "wvh wibbwiu iwfh ifbwibfwhwif",
+      "photo": "blog/Изображение_2_jN6v7Ay.jpeg",
+      "views_count": 1,
+      "published_date": "2024-10-31T11:19:19Z"
+    }
+  }
+]

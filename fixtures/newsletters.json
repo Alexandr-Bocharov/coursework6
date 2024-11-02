@@ -1,0 +1,348 @@
+[
+  {
+    "model": "newsletter.newsletter",
+    "pk": 1,
+    "fields": {
+      "first_sending_dt": "2024-10-30T18:37:00Z",
+      "last_sending_dt": "2024-10-30T18:40:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 1,
+      "user_owner": 1,
+      "clients": []
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 2,
+    "fields": {
+      "first_sending_dt": "2024-10-30T19:11:00Z",
+      "last_sending_dt": "2024-10-30T19:15:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 2,
+      "user_owner": 2,
+      "clients": []
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 3,
+    "fields": {
+      "first_sending_dt": "2024-10-30T19:21:00Z",
+      "last_sending_dt": "2024-10-30T19:23:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": []
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 4,
+    "fields": {
+      "first_sending_dt": "2024-10-30T19:26:00Z",
+      "last_sending_dt": "2024-10-30T19:28:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": []
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 5,
+    "fields": {
+      "first_sending_dt": "2024-10-30T19:34:00Z",
+      "last_sending_dt": "2024-10-30T19:40:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": []
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 6,
+    "fields": {
+      "first_sending_dt": "2024-10-30T19:40:00Z",
+      "last_sending_dt": "2024-10-30T19:45:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": []
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 7,
+    "fields": {
+      "first_sending_dt": "2024-10-31T13:35:00Z",
+      "last_sending_dt": "2024-10-31T13:40:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 1,
+      "user_owner": 1,
+      "clients": []
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 8,
+    "fields": {
+      "first_sending_dt": "2024-11-01T14:50:00Z",
+      "last_sending_dt": "2024-11-01T14:55:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 2,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 9,
+    "fields": {
+      "first_sending_dt": "2024-11-01T12:10:00Z",
+      "last_sending_dt": "2024-11-01T12:15:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 10,
+    "fields": {
+      "first_sending_dt": "2024-11-01T12:10:00Z",
+      "last_sending_dt": "2024-11-01T12:15:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 11,
+    "fields": {
+      "first_sending_dt": "2024-11-01T12:29:00Z",
+      "last_sending_dt": "2024-11-01T12:39:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 12,
+    "fields": {
+      "first_sending_dt": "2024-11-01T12:29:00Z",
+      "last_sending_dt": "2024-11-01T12:39:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 13,
+    "fields": {
+      "first_sending_dt": "2024-11-01T12:30:00Z",
+      "last_sending_dt": "2024-11-01T12:40:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 14,
+    "fields": {
+      "first_sending_dt": "2024-11-01T09:51:00Z",
+      "last_sending_dt": "2024-11-01T09:55:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 2,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 15,
+    "fields": {
+      "first_sending_dt": "2024-11-01T12:54:00Z",
+      "last_sending_dt": "2024-11-01T12:56:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 2,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 16,
+    "fields": {
+      "first_sending_dt": "2024-11-01T14:11:00Z",
+      "last_sending_dt": "2024-11-01T14:16:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 17,
+    "fields": {
+      "first_sending_dt": "2024-11-01T15:19:00Z",
+      "last_sending_dt": "2024-11-01T15:24:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 2,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 18,
+    "fields": {
+      "first_sending_dt": "2024-11-01T16:40:00Z",
+      "last_sending_dt": "2024-11-01T16:50:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 19,
+    "fields": {
+      "first_sending_dt": "2024-11-01T20:14:00Z",
+      "last_sending_dt": "2024-11-01T20:17:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 21,
+    "fields": {
+      "first_sending_dt": "2024-11-01T17:36:00Z",
+      "last_sending_dt": "2024-11-01T17:37:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 22,
+    "fields": {
+      "first_sending_dt": "2024-11-01T21:10:00Z",
+      "last_sending_dt": "2024-11-01T21:20:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 4,
+      "user_owner": 4,
+      "clients": [
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 23,
+    "fields": {
+      "first_sending_dt": "2024-11-01T21:08:00Z",
+      "last_sending_dt": "2024-11-01T21:20:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 4,
+      "user_owner": 4,
+      "clients": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "newsletter.newsletter",
+    "pk": 24,
+    "fields": {
+      "first_sending_dt": "2024-11-02T09:42:00Z",
+      "last_sending_dt": "2024-11-02T09:45:00Z",
+      "interval": 1,
+      "status": "completed",
+      "message": 3,
+      "user_owner": 2,
+      "clients": [
+        3,
+        5
+      ]
+    }
+  }
+]

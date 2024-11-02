@@ -1,0 +1,38 @@
+[
+  {
+    "model": "newsletter.message",
+    "pk": 1,
+    "fields": {
+      "title": "верификация",
+      "body": "зайдите на сайт mail sender",
+      "user_owner": 1
+    }
+  },
+  {
+    "model": "newsletter.message",
+    "pk": 2,
+    "fields": {
+      "title": "warcraft",
+      "body": "грядет обновление",
+      "user_owner": 2
+    }
+  },
+  {
+    "model": "newsletter.message",
+    "pk": 3,
+    "fields": {
+      "title": "проверка на окончание работы",
+      "body": "123",
+      "user_owner": 2
+    }
+  },
+  {
+    "model": "newsletter.message",
+    "pk": 4,
+    "fields": {
+      "title": "1234",
+      "body": "4321",
+      "user_owner": 4
+    }
+  }
+]

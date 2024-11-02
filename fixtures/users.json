@@ -1,0 +1,80 @@
+[
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$G35DyqOBcYOXnl5ycLezHb$ke70hZbOfgyG0k7G7bf3S43UMcYfpSDurkofgJecTHQ=",
+      "last_login": "2024-10-30T12:01:20.238Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-10-19T18:08:10.106Z",
+      "email": "admin@sky.com",
+      "company_name": null,
+      "first_name": "Admin",
+      "last_name": "Sky",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$M6SDnC4hseDuaGOWtF1Mhf$8an6m4xYrKGnfxQ2u4sCHyRrJgbhb7ZrsiN9HnufbrQ=",
+      "last_login": "2024-10-20T09:58:07.049Z",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-10-20T09:57:35.777Z",
+      "email": "counter230620013@yandex.com",
+      "company_name": null,
+      "first_name": null,
+      "last_name": null,
+      "token": "d09715c91bf395d26e75c2f561e3fb13",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$ksSEJztbO3wif4uOMaRkyF$DvwDv4yiVDZ7oYjrb782Dv1YqeiMFKUViikcaNczeY4=",
+      "last_login": "2024-10-30T11:36:07.248Z",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-10-29T10:35:11.308Z",
+      "email": "counter23062001@mail.ru",
+      "company_name": null,
+      "first_name": null,
+      "last_name": null,
+      "token": "335196d0ae8261ef4def8beef96a3ebf",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$4EgCzsm2Ob4RGLlxMTn6EM$KTVEnp8MMu8a+Cl0MdIxrST9jYSFniksy11kc0WRMZc=",
+      "last_login": "2024-10-30T11:39:13.333Z",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-10-30T09:31:05Z",
+      "email": "manager@sky.pro",
+      "company_name": null,
+      "first_name": null,
+      "last_name": null,
+      "token": null,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  }
+]
