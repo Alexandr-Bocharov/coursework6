@@ -8,7 +8,9 @@ django-apscheduler==0.7.0
 django-crispy-forms==2.3
 django-crontab==0.7.1
 idna==3.10
+pillow==11.0.0
 psycopg2-binary==2.9.9
+python-dotenv==1.0.1
 pytz==2024.2
 requests==2.32.3
 schedule==1.2.2
