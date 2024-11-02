@@ -1,0 +1,18 @@
+{% extends 'newsletter/base.html' %}
+{% load my_tags %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="card w-100 mb-3 text-center">
+            <div class="card-body bg-dark text-white">
+                <h5 class="card-title">{{ object.title }}</h5>
+                <img src="{{ object.photo | media_filter }}" alt="Image">
+                <h5 class="card-text">{{ object.body }}</h5>
+                <p>просмотры записи: {{ object.views_count }}</p>
+                <a type="button" class="btn btn-light" href="{% url 'blog:blog_list' %}">назад</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
