@@ -1,0 +1,35 @@
+{% extends 'newsletter/base.html' %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h2>Список клиентов</h2>
+        </div>
+
+        <a type="button" class="btn btn-primary btn-lg text-center w-25" href="{% url 'newsletter:client_create' %}">создать
+            клиента</a><br><br>
+
+        {% for object in object_list %}
+            <div class="card w-75 bg-dark">
+                <div class="card-body text-white">
+                    <h5 class="card-title">{{ object.name }} ({{ object.email }})</h5>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <a type="button" class="btn btn-outline-primary"
+                           href="{% url 'newsletter:client_detail' object.pk %}">перейти</a>
+                        <a type="button" class="btn btn-outline-primary"
+                           href="{% url 'newsletter:client_edit' object.pk %}">редактировать</a>
+                        <a type="button" class="btn btn-outline-primary"
+                           href="{% url 'newsletter:client_delete' object.pk %}">удалить</a>
+                    </div>
+                </div>
+            </div><br>
+        {% endfor %}
+
+
+    </div>
+
+
+
+{% endblock %}

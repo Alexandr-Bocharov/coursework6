@@ -1,0 +1,41 @@
+{% extends 'newsletter/base.html' %}
+
+{% block content %}
+
+<main role="main" class="container">
+
+    <div class="container">
+
+        <a type="button" class="btn btn-primary btn-lg text-center w-25"
+           href="{% url 'newsletter:newsletter_create' %}">Создать рассылку</a><br><br>
+
+        <div class="card-deck mb-3 text-center">
+            {% for newsletter in object_list %}
+            <div class="card">
+                <div class="card-body">
+
+                    <li>
+                        {{ newsletter.message.title }} - Статус: {{ newsletter.get_status_display }}
+                        {% if newsletter.status == 'in_progress' %}
+                        <a href="{% url 'newsletter:toggle_newsletter' newsletter.id %}">Остановить</a>
+                        {% elif newsletter.status == 'pending' %}
+                        <a href="{% url 'newsletter:toggle_newsletter' newsletter.id %}">Запустить</a>
+                        {% endif %}
+                    </li>
+                </div>
+                <div class="card-body">
+                    {% if not user.is_staff %}
+                    <a type="button" class="btn btn-primary"
+                       href="{% url 'newsletter:newsletter_edit' newsletter.pk %}">изменить</a>
+                    <a type="button" class="btn btn-danger" href="{% url 'newsletter:newsletter_delete' newsletter.pk %}">удалить</a>
+                    {% endif %}
+                    <a type="button" class="btn btn-info" href="{% url 'newsletter:newsletter_detail' newsletter.pk %}">инфо</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

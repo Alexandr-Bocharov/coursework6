@@ -1,0 +1,89 @@
+{% extends 'newsletter/base.html' %}
+{% load my_tags %}
+
+{% block content %}
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h2>Для чего нужна email рассылка?</h2>
+    </div>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">1. Маркетинг и продвижение</h4>
+                </div>
+                <div class="card-body">
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <p>Email-рассылки часто используются для продвижения продуктов, услуг или событий</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">2. Информирование и поддержка</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <p>Email-рассылки служат для информирования пользователей о новостях компании, обновлениях в
+                            продуктах или изменениях в политике</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">3. Укрепление отношений с клиентами</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <p>Регулярные рассылки помогают строить долгосрочные отношения с аудиторией и поддерживать
+                            лояльность клиентов.</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p>Всего рассылок создано: {{ all_newsletters_count }}</p>
+                    <p>Активных рассылок: {{ active_newsletters }}</p>
+                    <p>Клиентов: {{ unique_clients }}</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        {% for post in random_blog_posts %}
+                        <div class="col-4">
+                            <div class="card w-75 bg-dark h-100">
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title">
+                                        {{ post.title }}
+                                    </h5>
+                                    <div class="card-body">
+                                        <img src="{{ post.photo | media_filter }}" alt="Image">
+                                    </div>
+                                    <div class="card-body">
+                                        <a type="button" class="btn btn-light"
+                                           href="{% url 'blog:blog_view' post.pk %}">читать</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

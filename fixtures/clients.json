@@ -1,0 +1,32 @@
+[
+  {
+    "model": "newsletter.client",
+    "pk": 3,
+    "fields": {
+      "name": "Бочаров Александр",
+      "email": "counter23062001@mail.ru",
+      "comment": "",
+      "user_owner": 2
+    }
+  },
+  {
+    "model": "newsletter.client",
+    "pk": 4,
+    "fields": {
+      "name": "Бочаров Александр 2",
+      "email": "counter23062001@mail.ru",
+      "comment": "",
+      "user_owner": 4
+    }
+  },
+  {
+    "model": "newsletter.client",
+    "pk": 5,
+    "fields": {
+      "name": "Бочаров Александр3",
+      "email": "counter2306@yandex.ru",
+      "comment": "",
+      "user_owner": 2
+    }
+  }
+]

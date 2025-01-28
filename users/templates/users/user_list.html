@@ -1,0 +1,27 @@
+{% extends 'newsletter/base.html' %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h2>Список сообщений</h2>
+        </div>
+
+        <a type="button" class="btn btn-primary btn-lg text-center w-25" href="{% url 'newsletter:message_create' %}">Создать сообщение</a><br><br>
+
+        {% for object in object_list %}
+            <div class="card w-75 bg-dark">
+                <div class="card-body text-white">
+                    <h5 class="card-title">{{ object.email }}</h5>
+                    <a type="button" class="btn btn-primary" href="{% url 'users:block_user' object.pk %}">заблокировать</a>
+                </div>
+            </div><br>
+        {% endfor %}
+
+
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,34 @@
+[
+  {
+    "model": "newsletter.interval",
+    "pk": 1,
+    "fields": {
+      "name": "ежеминутно",
+      "frequency": "minutely"
+    }
+  },
+  {
+    "model": "newsletter.interval",
+    "pk": 2,
+    "fields": {
+      "name": "ежедневно",
+      "frequency": "daily"
+    }
+  },
+  {
+    "model": "newsletter.interval",
+    "pk": 3,
+    "fields": {
+      "name": "еженедельно",
+      "frequency": "weekly"
+    }
+  },
+  {
+    "model": "newsletter.interval",
+    "pk": 4,
+    "fields": {
+      "name": "ежемесячно",
+      "frequency": "monthly"
+    }
+  }
+]
